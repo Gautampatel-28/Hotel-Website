@@ -1,0 +1,606 @@
+/*----------------------------------------------Start of the Westin Hotel&Resort Website styling-------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	scroll-behavior: smooth;
+	font-family: 'Nunito', sans-serif;
+
+}
+.container{
+	max-width: 90%;
+	margin: auto;
+}
+.contentgrid{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 100px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	transition: 0.5s;
+}
+a:hover{
+	transition: 0.5s;
+	cursor: pointer;
+}
+.flex1{
+	display: flex;
+	justify-content: space-between;
+}
+.flex{
+	display: flex;
+}
+/*-------------------------------------------------------------Start of the head styling-------------------------------------------------------------------------------*/
+.head{
+	height: 10vh;
+	line-height: 10vh;
+}
+.head i {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background: #faf3e7;
+	text-align: center;
+	color: #cc8c18;
+	line-height: 30px;
+}
+.head img{
+	margin-top: 10px;
+}
+.social{
+	font-size:38px;
+	cursor: pointer;
+
+}
+.social i:active{
+	color: pink;
+}
+.address span{
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 0.1px;
+
+}
+/*-------------------------------------------------------------End of the head styling-----------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------Start of the header styling-------------------------------------------------------------------------------*/
+header{
+	background: #cc8c18;
+	padding: 15px 0px 15px 0;
+	color: white;
+
+}
+.navbar{
+	display: flex;
+	align-items: center;
+
+}
+.hamburger{
+	cursor: pointer;
+}
+.bar{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	transition: all 0.5s ease-in-out;
+	background: white;
+}
+.nav-menu{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+header ul{
+	padding: 0 20px 0 0px;
+}
+header li{
+	margin-right: 30px;
+}
+header ul li a{
+	font-size: 15px;
+	color: white;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: 0.5s;
+	color: white;
+	font-weight: 500;
+	font-size: 18px;
+	font-style: italic;
+}
+header ul li a:hover{
+	color: #000;
+}
+header .head_contact{
+	position: relative;
+}
+header .head_contact a{
+	position: absolute;
+	top: -40px;
+	left: -60px;
+	width: 75px;
+	height: 75px;
+	line-height: 70px;
+	text-align: center;
+	background: white;
+	color: #cc8c18;
+	border-radius: 50%;
+	transform: rotate(-45deg);
+	border: 5px solid #ece3d2;
+	font-size: 30px;
+	cursor: pointer;
+}
+header .sticky_logo{
+	display: none;
+}
+.
+.header.sticky .sticky_logo{
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin-top: -10px;
+}
+header.sticky{
+	z-index: 999;
+	position: fixed;
+	width: 100%;
+	background: #313538;
+	transition: 0.5s;
+	top: 0;
+	padding: 10px 0 0 0;
+	height: 12vh;
+}
+header .sticky ul li a{
+	color: white;
+}
+
+@media only screen and(max-width: 768px)
+{
+	.header .head-contact,
+	.logo
+	{
+		display: none;
+	}
+	.header.sticky{
+		height: 8vh;
+	}
+	.header.sticky_logo{
+		display: block;
+	}
+	.header.sticky .nav-menu{
+		background: #313538;
+	}
+	.navbar{
+		height: 5vh;
+		justify-content: space-between;
+	}
+	.nav-menu{
+		position: fixed;
+		left: -100%;
+		top: 11rem;
+		flex-direction: column;
+		background: #cc8c18;
+		width: 100%;
+		text-align: center; 
+		transition: 0.5s;
+		z-index: 99;
+		cursor: pointer;
+	}
+	.header.sticky .nav-menu{
+		top: 5rem;
+	}
+	.header ul li a{
+		color: white;
+	}
+	.nav-menu.active{
+		left: 0;
+	}
+	header li{
+		margin: 2.5rem 0;
+	}
+	.hamburger{
+		display: block;
+		cursor: pointer;
+	}
+	.hamburger.active .bar: nth-child(2){
+		opacity: 0;
+	}
+	.hamburger.active .bar: nth-child(1){
+		transform: translateY(8px) rotate(45deg);
+	}
+	.hamburger.active .bar: nth-child(3){
+		transform: translateY(-8px) rotate(45deg);
+	}
+}
+
+/*-------------------------------------------------------------End of the header styling-------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------Start of the home styling-------------------------------------------------------------------------------*/
+.grid{
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	grid-gap: 30px;
+}
+.home{
+	background-image: url("5435.jpg");
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-blend-mode: darken;
+	border-image: 23px;
+	opacity: 0.9;
+}
+.home h1{
+	font-family: 'Great Vibes', cursive;
+	font-size: 140px;
+	color: aqua;
+	padding-top: 10%;
+	letter-spacing: 5px;
+	font-weight: bolder;
+}
+.home p{
+	color: lightblue;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: 'Great Vibes', cursive;
+	letter-spacing: 2px;
+	font-weight: bolder;
+}
+.home .content{
+	text-align: left;
+	color: black;
+	margin-top: 7%;
+}
+.home .box{
+	padding: 35px;
+	background: linear-gradient(10deg,white,white,brown,brown,brown);
+	border-radius: 50px;
+}
+.home input{
+	margin-top: 10px;
+}
+input{
+	border: none;
+	outline: none;
+}
+.box{
+	color: white;
+	font-weight: bolder;
+	letter-spacing: 1px;
+}
+
+button{
+	width:130px;
+	height: 48px;
+	border-radius: 10px;
+	color: orange;
+	font-size: 16px;
+	cursor: pointer;
+	border: 1px solid crimson;
+	transition:0.6s;
+}
+
+button:hover{
+	background-color: crimson;
+	transform: scale(1.1);	
+}
+
+/*-------------------------------------------------------------End of the Home styling-------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------Start of the About us styling--------------------------------------------------------------------------*/
+.top{
+	margin-top: 80px;
+}
+.mtop{
+	margin-top: 40px;
+}
+.heading{
+	text-align: center;
+}
+.heading h5{
+	font-weight: 400px;
+	letter-spacing: 5px;
+	color: #cc8c18;
+	padding-top: 20px;
+	font-size: 23px;
+	text-transform: uppercase;
+}
+.heading h2{
+	color: #24416b;
+	font-size: 45px;
+	font-family: serif;
+	font-weight: bold;
+	margin: 10px 0 20px 0;
+}
+h3{
+	font-size: 35px;
+	font-family: serif;
+	color: #24416b;
+	margin-bottom: 20px;
+}
+.about .left{
+	padding: 20px;
+}
+p{
+	line-height: 30px;
+	color: #a4a4a4;
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+.about{
+	position: relative;
+	padding-bottom: 70px;
+}
+.about .right{
+	position: relative;
+}
+.about .right::after{
+	content: "";
+	top: 0;
+	left: 0;
+	background: #cc8c18;
+	width: 92%;
+	height: 61vh;
+	z-index: -1;
+	margin: 50px;
+}
+/*-------------------------------------------------------------End of the About us styling-------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------Start of the wrapper styling-----------------------------------------------------------------------------*/
+.wrapper{
+	background-image: url("8765.jp");
+	height: 80vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	position: left;
+}
+.item{
+	height: 70vh;
+	width: 75%;
+	position: left;
+}
+.heading{
+	padding-left: 300px;
+}
+.heading h5{
+	font-size: 42px;
+	font-family: ink free;
+}
+.heading h3{
+	font-size: 45px;
+	font-family: ink free;
+}
+.heading p{
+	color: black;
+	font-weight: bolder;
+	font-size: 20px;
+	font-family: ink free;
+	word-spacing: 3px;
+	letter-spacing: 2px;
+}
+/*-------------------------------------------------------------End of the wrapper styling----------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------Start of the wrapper 2 styling------------------------------------------------------------------------*/
+.wrapper2{
+	position: relative;
+	text-align: center;
+}
+.headingmtop h4{
+	font-size: 50px;
+	text-align: left;
+	font-weight: bolder;
+	color: brown;
+	font-family: cursive;
+}
+.headingmtop h2{
+	font-size: 30px;
+	text-align: left;
+	font-weight: bolder;
+	color: brown;
+	font-family: arial;	
+}
+.box{
+	box-shadow: 0 0 20px 3px rgba(0 0 0/5%);
+	padding: 20px;
+	transition: 0.5s;
+	width: 30%;
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 67px;
+	box-sizing: border-box;	
+}
+.contentgridmtop{
+	width:;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between; 
+}
+.wrapper2 h3{
+	font-size: 30px;
+}
+.wrapper2 i{
+	margin: 10px 0 15px 0;
+	color: #cc8c18;
+	font-size: 60px;
+}
+.wrapper2 span{
+	padding: 10px;
+	background: #f5e8d1;
+	color: #cc8e18;
+	border-radius: 50%;
+}
+.box ul li{
+	color: tan;
+}	
+.box:hover{
+	background: brown;
+	cursor: pointer;
+	transition: 1s;
+}
+.wrapper .box:hover span{
+	background: #fff;
+}
+ .box:hover p,
+ .box:hover h3,
+ .box:hover:{
+	color: pink;
+}
+
+.wrapper2::after{
+	content: "";
+	position: absolute;
+	top: -22%;
+	left: 0;
+	background-image: url();
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 100%;
+	z-index: 2;
+}
+/*-------------------------------------------------------------End of the wrapper2 styling-----------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------Start of the Room styling-------------------------------------------------------------------------------*/
+.leftgrid2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.box img{
+	border-radius: 788px;
+}
+
+/*-------------------------------------------------------------End of the Room styling----------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------Start of the Offer--------------------------------------------------------------------------------------*/
+.offer2 .heading{
+	padding-top: 10%;
+	text-align: center;
+}
+.offer2 .heading h3\{
+	color: red;
+}
+	
+/*-------------------------------------------------------------End of the Offer styling-------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------Start of the Gallery styling---------------------------------------------------------------------------*/
+.gallery .item{
+	position: relative;
+	cursor: pointer;
+}
+.gallerytop h5{
+	color: red;
+}
+.gallery .overlay i{
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	z-index: 1;
+	opacity: 0;
+	font-size: 50px;
+	color: white;  
+}
+.gallery .overlay{
+	position: absolute;
+	content: "";
+	background: rgba(204,140,24,0.73);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.gallery .item:hover .overlay,
+.gallery .item:hover i{
+	opacity: 1;
+	transition: 0.5s;
+	cursor: pointer;
+
+}
+/*-------------------------------------------------------------End of the gallery styling-------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------Start of the Map styling---------------------------------------------------------------------------------*/
+.map iframe{
+	width: 100%;
+}
+
+/*-------------------------------------------------------------End of the Map styling------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------Start of the Footer styling-------------------------------------------------------------------------------*/
+footer{
+	background: black;
+	color: white;
+	padding: 30px;
+}
+.subscribe{
+	text-align: center;
+	max-width: 50%;
+	margin: auto;
+}
+
+.subscribe input{
+	width: 100%;
+	border-radius: 50px;
+	margin-right: 30px;
+	padding: 10px;
+}
+.footer .grid{
+	grid-template-columns: repeat(4,1fr);
+}
+.footer .content h2{
+	margin-bottom: 20px;
+	font-size: 23px;
+}
+.footer li{
+	margin-bottom: 15px;
+	opacity: 0.5s;
+}
+footer li i{
+	font-size: 13px;
+	margin-right: 10px;
+}
+footer .content h3{
+	font-size: 20px;
+	color: white;
+	margin: 0;
+}
+footer .content .icon .i{
+	font-size: 25px;
+	margin-right: 20px;
+}
+footer .social i{
+	padding: 10px;
+	background: grey; 
+	margin-right: 10px;
+	border-radius: 50%;
+}
+footer .content{
+	padding-top: 60px;
+	padding-bottom: 50px;
+	border-top: 2px solid rgba(255,255,255,0.2); 
+}
+#footer1{
+	color: white;
+	font-weight: bolder;
+	font-size: 13px;
+	font-style: italic;
+}
+/*-------------------------------------------------------------End of the Footer styling-------------------------------------------------------------------------------*/
+
+/*----------------------------------------------End of the Westin Hotel&Resort Website styling-------------------------------------------------------------------------*/
